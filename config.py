@@ -13,6 +13,10 @@ class DevelopmentConfig(Config):
     DEBUG = True
 
 
+class TestingConfig(Config):
+    TESTING = True
+    DEBUG = True
+
 class ProductionConfig(Config):
     TESTING = False
     DEBUG = False
@@ -20,5 +24,6 @@ class ProductionConfig(Config):
 
 app_config = {
     'development': DevelopmentConfig,
-    'production': ProductionConfig
+    'production': ProductionConfig,
+    'testing': TestingConfig
 }
