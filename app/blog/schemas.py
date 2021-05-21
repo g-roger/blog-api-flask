@@ -8,7 +8,7 @@ class PostSchema(Schema):
     author = fields.String(required=True)
     title = fields.String(required=True)
     description = fields.String(required=True)
-    publication_date = fields.Date(required=True)
+    publication_date = fields.DateTime()
 
     @post_load
     def make_post(self, data, **kwargs):
