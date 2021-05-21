@@ -25,7 +25,7 @@ def update_post(id, updated_post):
         return None
 
     editable_attributes = [
-        'author', 'title', 'description', 'publication_date'
+        'author', 'title', 'description'
     ]
 
     for attribute in editable_attributes:
